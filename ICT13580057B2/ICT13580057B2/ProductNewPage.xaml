@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ICT13580057B2.ProductNewPage">
+    <ScrollView>
+
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20">
+            <Label
+                x:Name="titleLabel"
+                Text="เพิ่มสินค้าใหม่"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Text="ª×èÍÊÔ¹¤éÒ" />
+            <Entry
+                x:Name="productNameEntry" />
+            <Label
+                Text="ÃÒÂÅÐàÍÕÂ'" />
+            <Entry
+                x:Name="productDetailEntry" />
+            <Label
+                Text="ËÁÇ'ÊÔ¹¤éÒ" />
+            <Picker
+                x:Name="categoryPicker"
+                Title="àÅ×Í¡ËÁÇ'ÊÔ¹¤éÒ"/>
+
+            <Label
+                Text="ÃÒ¤ÒÊÔ¹¤éÒ" />
+            <Entry 
+                x:Name="productPriceEntry"/>
+
+            <Label
+                Text="ÃÒ¤ÒÃÇÁ" />
+            <Entry 
+                x:Name="sellPriceEntry"/>
+            <Label
+                Text="ÊµêÍ¡ÊÔ¹¤éÒ" />
+            <Entry 
+                x:Name="stockEntry"/>
+            <Button
+                x:Name="submitButton"
+                Text="µ¡Å§"
+                BackgroundColor="Silver"/>
+
+            <Button
+                x:Name="cancelButton"
+                Text="Â¡àÅÔ¡"
+                BackgroundColor="Red"/>
+
+
+        </StackLayout>
+
+
+    </ScrollView>
+</ContentPage>

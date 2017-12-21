@@ -20,7 +20,9 @@ namespace ICT13580057B2.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            var dbpath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            dbpath = System.IO.Path.Combine(dbpath, "myshop.db3");
+            LoadApplication(new App(dbpath));
         }
     }
 }

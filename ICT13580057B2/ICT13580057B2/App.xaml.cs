@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ICT13580057B2.Helpers;
 
 using Xamarin.Forms;
 
@@ -9,11 +10,12 @@ namespace ICT13580057B2
 {
     public partial class App : Application
     {
-        public App()
+        public static DbHelper DbHelper { get; set; }
+        public App(string dbpath)
         {
             InitializeComponent();
-
-            MainPage = new ICT13580057B2.MainPage();
+            DbHelper = new DbHelper(dbpath);
+            MainPage = new NavigationPage(new ICT13580057B2.MainPage());
         }
 
         protected override void OnStart()
